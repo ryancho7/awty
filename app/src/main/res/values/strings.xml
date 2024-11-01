@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AWTY</string>
+    <string name="message">Enter Message</string>
+    <string name="phone_num">Enter Phone Number</string>
+    <string name="interval">Minutes Between Each Nag</string>
+    <string name="button_start_text">Start</string>
+    <string name="button_stop_text">Stop</string>
+</resources>
