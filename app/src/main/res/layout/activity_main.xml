@@ -8,15 +8,16 @@
     <EditText
         android:id="@+id/messageEditText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="@string/message"
         android:gravity="center"
+        android:inputType="text"
         android:layout_marginTop="5dp"/>
 
     <EditText
         android:id="@+id/phoneNumberEditText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="@string/phone_num"
         android:inputType="phone"
         android:gravity="center"/>
@@ -24,7 +25,7 @@
     <EditText
         android:id="@+id/intervalEditText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="@string/interval"
         android:inputType="number"
         android:gravity="center"/>
