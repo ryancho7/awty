@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.SEND_SMS), SMS_PERMISSION_CODE)
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.SEND_SMS), 1)
             return
         }
 
@@ -115,6 +115,7 @@ class MainActivity : AppCompatActivity() {
 
         try {
             startActivity(intent)
+            Log.d("MMSSend", "MMS has been sent")
         } catch (e: Exception) {
             Toast.makeText(this, "Failed to send file: ${e.message}", Toast.LENGTH_SHORT).show()
             e.printStackTrace()
@@ -141,16 +142,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == SMS_PERMISSION_CODE) {
+        if (requestCode == 1) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startScheduler()
             } else {
                 Toast.makeText(this, "SMS permission denied", Toast.LENGTH_SHORT).show()
             }
         }
-    }
-
-    companion object {
-        private const val SMS_PERMISSION_CODE = 1
     }
 }
