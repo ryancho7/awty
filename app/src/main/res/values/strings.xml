@@ -5,4 +5,6 @@
     <string name="interval">Minutes Between Each Nag</string>
     <string name="button_start_text">Start</string>
     <string name="button_stop_text">Stop</string>
+    <string name="send_audio">Send Audio</string>
+    <string name="send_video">Send Video</string>
 </resources>

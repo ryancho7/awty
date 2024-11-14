@@ -38,5 +38,34 @@
         android:gravity="center"
         android:clickable="false"/>
 
+    <EditText
+        android:id="@+id/audioPhoneNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="@string/phone_num"
+        android:inputType="phone"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/sendAudioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_audio"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/videoPhoneNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="@string/phone_num"
+        android:inputType="phone"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/sendVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_video"
+        android:gravity="center"/>
 
 </LinearLayout>
